@@ -1,0 +1,56 @@
+{
+  "schema_version": "pim.showcase.fixture.v1",
+  "kind": "ADJUDICATION",
+  "reference": {
+    "case_id": "demo.unknown_verifier",
+    "latent_id": "demo.latent.unknown_verifier",
+    "family_id": "demo.family.unknown_verifier",
+    "presentation_kind": "EXPLICIT",
+    "original_text": "Synthetic finite answer a; original verifier is unavailable.",
+    "omega": [
+      "a",
+      "b"
+    ],
+    "theta_options": [
+      "fixed"
+    ],
+    "theta_star": "fixed",
+    "q_by_theta": {
+      "fixed": [
+        "a"
+      ]
+    },
+    "question_slots": [
+      "domain"
+    ],
+    "confirmation_required": true,
+    "reference_revision": "demo.r1",
+    "approval_source": {
+      "status": "TEST_VECTOR",
+      "source_ref": "synthetic:GH02:unknown_verifier"
+    }
+  },
+  "contract": {
+    "case_id": "demo.unknown_verifier",
+    "version": "demo.v1",
+    "omega": [
+      "a",
+      "b"
+    ],
+    "acceptance_rule": "ONE_WITNESS",
+    "C_v": [
+      "a"
+    ],
+    "V_v": null
+  },
+  "response": {
+    "action": "ANSWER",
+    "answers": [
+      "a"
+    ],
+    "conditional_branches": {},
+    "question_slot": null,
+    "notes": "Synthetic offline illustration only."
+  }
+}
+
