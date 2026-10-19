@@ -1,0 +1,70 @@
+1
+00:00:01,000 --> 00:00:08,889
+What if artificial intelligence could do more than search for answers, and also recognize the limits of its
+current approach?
+
+2
+00:00:09,153 --> 00:00:19,184
+Prajna Insight Model turns part of that vision into a bounded research prototype, with explicit search
+spaces, constraints, and recorded costs.
+
+3
+00:00:19,453 --> 00:00:30,921
+In the evaluated implementation, reframing mainly reorders finite candidate catalogs. It does not create a
+new foundation model or faster downstream solver.
+
+4
+00:00:31,187 --> 00:00:41,374
+A reframed candidate must map back to the original problem. Without the original verifier's PASS, it cannot
+count as a verified answer.
+
+5
+00:00:41,620 --> 00:00:54,551
+Cost-aware gating uses hand-designed estimates to consider reframing. Positive estimated benefit does not
+prove real savings, a causal advantage, or optimal decisions.
+
+6
+00:00:54,820 --> 00:01:09,501
+The historical pilot contains 4,320 records. Its paired rerun checks consistency, not a second independent
+sample. Task families and seeds remain statistically dependent.
+
+7
+00:01:09,753 --> 00:01:22,501
+In this development pilot, PIM succeeded less often than both baselines. That negative result belongs in the
+research record, clearly and without concealment.
+
+8
+00:01:22,753 --> 00:01:34,561
+Its average accounted cost was also higher. These observations challenge this implementation; they do not
+establish that cognitive reframing is ineffective in general.
+
+9
+00:01:34,820 --> 00:01:48,848
+Nine development families cannot establish broad generalization. Unfinished validation, dependent seeds,
+and unmatched alternative methods limit what these exploratory comparisons can tell us.
+
+10
+00:01:49,120 --> 00:02:05,159
+ChatGPT supported early architecture and research planning. Codex contributed formalization, software,
+analysis, and writing. Complete expression-level provenance and human scientific review remain
+incomplete.
+
+11
+00:02:05,420 --> 00:02:19,866
+Runtime reliability also has unresolved limits. Missing resource-release evidence remains unknown; it proves
+neither zero leakage nor a leak. Engineering checks must stay bounded.
+
+12
+00:02:20,120 --> 00:02:32,554
+A future goal is recognizing mistaken interpretations and seeking human clarification. Any revised fixed
+contract must preserve its history and receive the necessary approval.
+
+13
+00:02:32,820 --> 00:02:45,907
+Specification fidelity, durable snapshot commits, and external audit journals remain proposed work. They
+are not capabilities already established by this prototype or its benchmark.
+
+14
+00:02:46,153 --> 00:02:56,524
+The goal is not to declare a breakthrough early, but to make each claim inspectable. Prajna AI: learning to
+rethink, and verify.
