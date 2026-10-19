@@ -2,6 +2,14 @@
 
 PIM is a research prototype for bounded symbolic search, constraint-preserving cognitive reframing (CPCR), rule-based cost-aware insight gating (CAIG), independent answer verification, and auditable execution. Prajna AI is the broader development vision; capabilities proposed in that vision are tracked separately from implemented and tested components.
 
+## Research documentary — 3 minutes
+
+[![PIM / Prajna AI research documentary](media/research-film/thumbnail.png)](media/research-film/PIM-Prajna-AI-180s.mp4)
+
+[Watch or download the complete film](media/research-film/PIM-Prajna-AI-180s.mp4) · [Detailed introduction — English / 繁體中文](docs/research-film.md) · [English subtitles](media/research-film/captions.en.srt) · [Media integrity manifest](media/research-film/manifest.json)
+
+This English-language documentary presents the bounded research prototype, its exploratory negative results and unresolved limitations. It uses an authorized presenter portrait and AI-synthesized personal-voice narration in a photo-and-narration format. It is a research introduction, not evidence of general reasoning superiority or completed scientific peer review.
+
 ## Repository status
 
 This private repository is the remote development home for the project. Its initial contents provide an English project overview. Source code, historical traces, datasets, manuscripts, and private author-review records remain in the local research workspace and have not been uploaded in this repository setup.
