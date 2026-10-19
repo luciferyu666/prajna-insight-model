@@ -1,0 +1,58 @@
+{
+  "schema_version": "pim.showcase.fixture.v1",
+  "kind": "ADJUDICATION",
+  "reference": {
+    "case_id": "demo.wrong_contract",
+    "latent_id": "demo.latent.wrong_contract",
+    "family_id": "demo.family.wrong_contract",
+    "presentation_kind": "EXPLICIT",
+    "original_text": "Synthetic requirement: y=2. IDs one and two denote 1 and 2.",
+    "omega": [
+      "one",
+      "two"
+    ],
+    "theta_options": [
+      "specified"
+    ],
+    "theta_star": "specified",
+    "q_by_theta": {
+      "specified": [
+        "two"
+      ]
+    },
+    "question_slots": [
+      "domain"
+    ],
+    "confirmation_required": true,
+    "reference_revision": "demo.r1",
+    "approval_source": {
+      "status": "TEST_VECTOR",
+      "source_ref": "synthetic:GH02:wrong_contract"
+    }
+  },
+  "contract": {
+    "case_id": "demo.wrong_contract",
+    "version": "demo.v1",
+    "omega": [
+      "one",
+      "two"
+    ],
+    "acceptance_rule": "ONE_WITNESS",
+    "C_v": [
+      "one"
+    ],
+    "V_v": [
+      "one"
+    ]
+  },
+  "response": {
+    "action": "ANSWER",
+    "answers": [
+      "one"
+    ],
+    "conditional_branches": {},
+    "question_slot": null,
+    "notes": "Synthetic offline illustration only."
+  }
+}
+

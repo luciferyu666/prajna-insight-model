@@ -1,0 +1,50 @@
+{
+  "schema_version": "pim.showcase.fixture.v1",
+  "kind": "PROPOSAL",
+  "reference": {
+    "case_id": "demo.proposal_only",
+    "latent_id": "demo.latent.proposal_only",
+    "family_id": "demo.family.proposal_only",
+    "presentation_kind": "EXPLICIT",
+    "original_text": "Synthetic requirement: y=2; a corrected contract is only a proposal.",
+    "omega": [
+      "one",
+      "two"
+    ],
+    "theta_options": [
+      "specified"
+    ],
+    "theta_star": "specified",
+    "q_by_theta": {
+      "specified": [
+        "two"
+      ]
+    },
+    "question_slots": [
+      "domain"
+    ],
+    "confirmation_required": true,
+    "reference_revision": "demo.r1",
+    "approval_source": {
+      "status": "TEST_VECTOR",
+      "source_ref": "synthetic:GH02:proposal_only"
+    }
+  },
+  "response": {
+    "action": "ANSWER",
+    "answers": [
+      "one"
+    ],
+    "conditional_branches": {},
+    "question_slot": null,
+    "notes": "Synthetic offline illustration only."
+  },
+  "original_problem_utf8": "Synthetic requirement: y=2; a corrected contract is only a proposal.",
+  "parent_contract_utf8": "{\n  \"case_id\": \"demo.proposal_only\",\n  \"version\": \"demo.v1\",\n  \"omega\": [\n    \"one\",\n    \"two\"\n  ],\n  \"acceptance_rule\": \"ONE_WITNESS\",\n  \"C_v\": [\n    \"one\"\n  ],\n  \"V_v\": [\n    \"one\"\n  ]\n}\n",
+  "proposed_contract_utf8": "{\n  \"case_id\": \"demo.proposal_only\",\n  \"version\": \"demo.v2\",\n  \"omega\": [\n    \"one\",\n    \"two\"\n  ],\n  \"acceptance_rule\": \"ONE_WITNESS\",\n  \"C_v\": [\n    \"two\"\n  ],\n  \"V_v\": [\n    \"two\"\n  ]\n}\n",
+  "reason": "Illustrate a proposed finite correction without adopting it.",
+  "evidence_refs": [
+    "synthetic:GH02:proposal_only"
+  ]
+}
+

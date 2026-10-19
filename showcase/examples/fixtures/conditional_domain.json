@@ -1,0 +1,67 @@
+{
+  "schema_version": "pim.showcase.fixture.v1",
+  "kind": "ADJUDICATION",
+  "reference": {
+    "case_id": "demo.conditional_domain",
+    "latent_id": "demo.latent.conditional_domain",
+    "family_id": "demo.family.conditional_domain",
+    "presentation_kind": "AMBIGUOUS",
+    "original_text": "Synthetic x^2=-1 illustration; number domain is not confirmed by a human.",
+    "omega": [
+      "minus_i",
+      "plus_i"
+    ],
+    "theta_options": [
+      "real",
+      "complex"
+    ],
+    "theta_star": "complex",
+    "q_by_theta": {
+      "real": [],
+      "complex": [
+        "minus_i",
+        "plus_i"
+      ]
+    },
+    "question_slots": [
+      "domain"
+    ],
+    "confirmation_required": true,
+    "reference_revision": "demo.r1",
+    "approval_source": {
+      "status": "TEST_VECTOR",
+      "source_ref": "synthetic:GH02:conditional_domain"
+    }
+  },
+  "contract": {
+    "case_id": "demo.conditional_domain",
+    "version": "demo.v1",
+    "omega": [
+      "minus_i",
+      "plus_i"
+    ],
+    "acceptance_rule": "ALL_SOLUTIONS",
+    "C_v": [
+      "minus_i",
+      "plus_i"
+    ],
+    "V_v": [
+      "minus_i",
+      "plus_i"
+    ]
+  },
+  "response": {
+    "action": "CONDITIONAL",
+    "answers": [],
+    "conditional_branches": {
+      "real": [],
+      "complex": [
+        "minus_i",
+        "plus_i"
+      ]
+    },
+    "question_slot": null,
+    "notes": "Synthetic offline illustration only."
+  }
+}
+

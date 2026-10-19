@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PIM-NEXT finite AnswerEnvelope",
+  "description": "Structural validation retains duplicate and out-of-domain parseable claim IDs for finite FAIL adjudication.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "action",
+    "answers",
+    "conditional_branches",
+    "question_slot",
+    "notes"
+  ],
+  "properties": {
+    "action": {
+      "enum": [
+        "ANSWER",
+        "CONDITIONAL",
+        "CLARIFY",
+        "ABSTAIN"
+      ]
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "minItems": 0,
+      "maxItems": 512
+    },
+    "conditional_branches": {
+      "type": "object",
+      "maxProperties": 4,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+        },
+        "minItems": 0,
+        "maxItems": 512
+      }
+    },
+    "question_slot": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+        }
+      ]
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 4096
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "action": {
+          "const": "ANSWER"
+        },
+        "conditional_branches": {
+          "maxProperties": 0
+        },
+        "question_slot": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "properties": {
+        "action": {
+          "const": "CONDITIONAL"
+        },
+        "answers": {
+          "maxItems": 0
+        },
+        "conditional_branches": {
+          "minProperties": 1
+        },
+        "question_slot": {
+          "type": "null"
+        }
+      }
+    },
+    {
+      "properties": {
+        "action": {
+          "const": "CLARIFY"
+        },
+        "answers": {
+          "maxItems": 0
+        },
+        "conditional_branches": {
+          "maxProperties": 0
+        },
+        "question_slot": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+        }
+      }
+    },
+    {
+      "properties": {
+        "action": {
+          "const": "ABSTAIN"
+        },
+        "answers": {
+          "maxItems": 0
+        },
+        "conditional_branches": {
+          "maxProperties": 0
+        },
+        "question_slot": {
+          "type": "null"
+        }
+      }
+    }
+  ]
+}

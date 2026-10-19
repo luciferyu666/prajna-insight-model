@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PIM-NEXT finite ReferenceSpec",
+  "description": "Finite structural schema only. Python loader additionally enforces exact Q keys, subset/domain and theta-star membership. No human approval authentication.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "latent_id",
+    "family_id",
+    "presentation_kind",
+    "original_text",
+    "omega",
+    "theta_options",
+    "theta_star",
+    "q_by_theta",
+    "question_slots",
+    "confirmation_required",
+    "reference_revision",
+    "approval_source"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+    },
+    "latent_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+    },
+    "family_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+    },
+    "presentation_kind": {
+      "enum": [
+        "EXPLICIT",
+        "AMBIGUOUS"
+      ]
+    },
+    "original_text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16384
+    },
+    "omega": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "minItems": 1,
+      "maxItems": 512,
+      "uniqueItems": true
+    },
+    "theta_options": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true
+    },
+    "theta_star": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+    },
+    "q_by_theta": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 4,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+        },
+        "minItems": 0,
+        "maxItems": 512,
+        "uniqueItems": true
+      }
+    },
+    "question_slots": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+      },
+      "minItems": 0,
+      "maxItems": 8,
+      "uniqueItems": true
+    },
+    "confirmation_required": {
+      "type": "boolean"
+    },
+    "reference_revision": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}$"
+    },
+    "approval_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "source_ref"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "TEST_VECTOR",
+            "PENDING_HUMAN_CONFIRMATION"
+          ]
+        },
+        "source_ref": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            }
+          ]
+        }
+      }
+    }
+  }
+}

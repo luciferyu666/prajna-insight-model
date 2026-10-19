@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Draft paired reference bank manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "bank_id", "reference_revision", "evidence_kind", "review_status", "entries"],
+  "properties": {
+    "schema_version": {"const": "pim-next.reference-bank.v1"},
+    "bank_id": {"type": "string", "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}(?![\\s\\S])"},
+    "reference_revision": {"type": "string", "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}(?![\\s\\S])"},
+    "evidence_kind": {"const": "DRAFT_REFERENCE_BANK"},
+    "review_status": {"const": "PENDING_HUMAN_CONFIRMATION"},
+    "entries": {
+      "type": "array", "minItems": 36, "maxItems": 36,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["case_id", "latent_id", "family_id", "split", "presentation_kind", "path", "sha256"],
+        "properties": {
+          "case_id": {"type": "string", "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}(?![\\s\\S])"},
+          "latent_id": {"type": "string", "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,63}(?![\\s\\S])"},
+          "family_id": {"enum": ["DOMAIN", "UNITS", "ENDPOINT", "QUANTIFIER", "OPTIMALITY_TIES", "ALLOWED_OPERATIONS"]},
+          "split": {"enum": ["calibration", "development"]},
+          "presentation_kind": {"enum": ["EXPLICIT", "AMBIGUOUS"]},
+          "path": {"type": "string", "maxLength": 81, "pattern": "^(calibration|development)/[A-Za-z0-9][A-Za-z0-9_.-]{0,63}\\.json(?![\\s\\S])"},
+          "sha256": {"type": "string", "minLength": 64, "maxLength": 64, "pattern": "^[0-9a-f]{64}(?![\\s\\S])"}
+        }
+      }
+    }
+  }
+}
