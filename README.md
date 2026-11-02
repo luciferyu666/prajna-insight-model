@@ -2,17 +2,21 @@
 
 PIM is a research prototype for bounded symbolic search, constraint-preserving cognitive reframing (CPCR), rule-based cost-aware insight gating (CAIG), independent answer verification, and auditable execution. Prajna AI is the broader development vision; capabilities proposed in that vision are tracked separately from implemented and tested components.
 
-## Research documentary — 3 minutes
+## PIM / Prajna AI v0.2 — English animated explainer
 
-[![PIM / Prajna AI research documentary](media/research-film/thumbnail.png)](media/research-film/PIM-Prajna-AI-180s.mp4)
+[![Watch the PIM / Prajna AI v0.2 English animated explainer](media/research-film/scene-01.png)](https://www.youtube.com/watch?v=7fXS9Q3H0HA)
 
-[Watch or download the complete film](media/research-film/PIM-Prajna-AI-180s.mp4) · [Detailed introduction — English / 繁體中文](docs/research-film.md) · [English subtitles](media/research-film/captions.en.srt) · [Media integrity manifest](media/research-film/manifest.json)
+**What if an AI gives a convincing answer, but starts from the wrong assumptions?**
 
-This English-language documentary presents the bounded research prototype, its exploratory negative results and unresolved limitations. It uses an authorized presenter portrait and AI-synthesized personal-voice narration in a photo-and-narration format. It is a research introduction, not evidence of general reasoning superiority or completed scientific peer review.
+[Watch on YouTube](https://www.youtube.com/watch?v=7fXS9Q3H0HA) · [Complete 1080p MP4](media/research-film/PIM-Prajna-AI-v02-English-Explainer-1080p-v01.mp4) · [Film guide and research scope](docs/research-film.md) · [English subtitles](media/research-film/captions.en.srt) · [Media integrity manifest](media/research-film/manifest.json)
+
+This 3-minute-53-second animated introduction presents the v0.2 roadmap: testable hypotheses, active experimentation, and an evidence-based reasoning loop. It distinguishes bounded implemented prototypes and engineering evidence from proposed research. The full original English narration is retained; AI-assisted motion graphics and an authorized presenter portrait provide the visuals, without lip sync.
+
+The film covers the broader research program. It does not imply that all roadmap capabilities are implemented in the [public showcase](showcase/README.md), or that PIM is a newly trained foundation LLM or has demonstrated general reasoning superiority.
 
 ## Repository status
 
-This private repository is the remote development home for the project. Its initial contents provide an English project overview. Source code, historical traces, datasets, manuscripts, and private author-review records remain in the local research workspace and have not been uploaded in this repository setup.
+This public repository provides the project overview, the v0.2 English animated explainer, and a selected [33-file research showcase](showcase/README.md). The showcase is a bounded demonstration, not the complete research workspace. Historical traces, full research datasets, archived manuscripts, and private human-review records are not included.
 
 The current evidence supports a bounded research prototype. General reasoning-state sufficiency, general natural-language semantic fidelity, and superior reasoning performance have not been established.
 

@@ -1,43 +1,43 @@
 {
-    "schema_version":  "1.0",
-    "artifact_version":  "formal-photo-v02",
-    "title":  "PIM / Prajna AI - A Three-Minute Research Documentary",
-    "duration_seconds":  180,
-    "duration_evidence":  "Accepted source publication receipt; no new duration measurement claimed",
-    "audio_language":  "en",
-    "subtitle_languages":  [
-                               "en"
-                           ],
-    "introduction_languages":  [
-                                   "zh-Hant",
-                                   "en"
-                               ],
-    "presentation":  "Authorized formal-suit personal portrait, AI-synthesized personal English narration and research cards; photo-and-narration format, not full lip synchronization",
-    "approved_description_source_sha256":  "c79947f895597046a4bff59ce9044a00994c59f6fd66b1dfca47f8a1d5c7c769",
-    "files":  [
-                  {
-                      "path":  "media/research-film/PIM-Prajna-AI-180s.mp4",
-                      "bytes":  8466222,
-                      "sha256":  "c9f4f38c87c8f7677cab5391d5afa1973394f00266dbc70efbda9ba96052fbf5"
-                  },
-                  {
-                      "path":  "media/research-film/thumbnail.png",
-                      "bytes":  761888,
-                      "sha256":  "3e5d0cbfd68a224439ff3556e65a4993879466cce2c3dece0f8b629f266202a6"
-                  },
-                  {
-                      "path":  "media/research-film/captions.en.srt",
-                      "bytes":  2835,
-                      "sha256":  "62915861bf39611356b6ec1ac9199022aaa5cedc4b7a5010051d6e4d92facb1d"
-                  }
-              ],
-    "guide":  {
-                  "path":  "docs/research-film.md",
-                  "bytes":  9221,
-                  "sha256":  "af6bc75858a07e5d55e444c919c79b66b58dc0f8c2481bd1949edd4cbadf4d2c"
-              },
-    "research_scope":  "Bounded symbolic-search prototype and exploratory development-pilot results; no general reasoning superiority or completed scientific peer review claimed",
-    "rights":  "No new repository license or redistribution permission is granted by this manifest",
-    "integrity_limit":  "SHA-256 detects byte differences relative to this manifest; it does not establish immutable storage",
-    "repository_visibility":  "private"
+  "schema_version": "2.0",
+  "artifact_version": "pim-v02-english-animated-explainer-v01",
+  "title": "PIM / Prajna AI v0.2 — English Animated Explainer",
+  "integrated_date": "2026-11-02",
+  "audio_language": "en",
+  "subtitle_languages": [
+    "en"
+  ],
+  "duration_seconds": 232.75102040816327,
+  "duration_evidence": "Existing production Media-QA.md: 10264320 presentation ticks at 44100 Hz; no fresh decode or rerender for this integration",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "video_codec": "H.264",
+  "audio_codec": "AAC",
+  "youtube_url": "https://www.youtube.com/watch?v=7fXS9Q3H0HA",
+  "guide": "docs/research-film.md",
+  "files": [
+    {
+      "path": "media/research-film/PIM-Prajna-AI-v02-English-Explainer-1080p-v01.mp4",
+      "bytes": 19552261,
+      "sha256": "ed9ace6b76976365d07a5b921c5bd69b691e138305fb7d2007fedb86199f5427"
+    },
+    {
+      "path": "media/research-film/scene-01.png",
+      "bytes": 197041,
+      "sha256": "075bbe243925ba4c854a9c8bf90bad6355950840190d32615102e59fbf1d7d78"
+    },
+    {
+      "path": "media/research-film/captions.en.srt",
+      "bytes": 4982,
+      "sha256": "8ea6dd7a5bdda7c103b29a1277add423001129b3d6496038735ef059ba4d2413"
+    }
+  ],
+  "production_disclosure": "Full original supplied English narration converted to AAC; AI-generated voice, AI-assisted motion infographics and authorized supporting portrait; no lip sync",
+  "research_scope": "Bounded prototype and engineering evidence are distinct from proposed active experimentation and hypothesis-revision research; no general superiority or completed scientific validation claimed",
+  "public_showcase_scope": "The wider research program shown in the film is not fully distributed in showcase/",
+  "rights": "No new repository license or redistribution permission is granted by this manifest",
+  "integrity_limit": "Hashes identify repository master files, not YouTube transcoded copies; they do not establish immutable storage or scientific validity",
+  "repository_visibility": "public"
 }

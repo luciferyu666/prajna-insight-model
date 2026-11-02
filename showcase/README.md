@@ -38,6 +38,7 @@ The standalone JSON and in-process capture match as documents; their raw streams
 
 ## Read next
 
+- [PIM / Prajna AI v0.2 English animated explainer](../docs/research-film.md) — broader research roadmap; not all capabilities shown are included in this showcase.
 - [Existing walkthrough](docs/demo-walkthrough.md)
 - [Actual offline architecture](docs/architecture.md)
 - [Research and distribution limitations](docs/limitations.md)

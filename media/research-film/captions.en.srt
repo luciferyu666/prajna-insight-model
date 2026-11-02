@@ -1,70 +1,200 @@
 1
-00:00:01,000 --> 00:00:08,889
-What if artificial intelligence could do more than search for answers, and also recognize the limits of its
-current approach?
+00:00:00,000 --> 00:00:05,600
+What if an AI gives a convincing answer, but starts from the wrong assumptions?
 
 2
-00:00:09,153 --> 00:00:19,184
-Prajna Insight Model turns part of that vision into a bounded research prototype, with explicit search
-spaces, constraints, and recorded costs.
+00:00:05,600 --> 00:00:17,195
+That question is at the heart of PIM, the Prajna Insight Model, and Prajna AI: a
+research project exploring how reasoning can become more testable,
 
 3
-00:00:19,453 --> 00:00:30,921
-In the evaluated implementation, reframing mainly reorders finite candidate catalogs. It does not create a
-new foundation model or faster downstream solver.
+00:00:17,195 --> 00:00:19,680
+transparent, and accountable.
 
 4
-00:00:31,187 --> 00:00:41,374
-A reframed candidate must map back to the original problem. Without the original verifier's PASS, it cannot
-count as a verified answer.
+00:00:19,680 --> 00:00:29,367
+Our Development Roadmap, version zero point two, focuses on three connected ideas:
+testable hypotheses, active experimentation,
 
 5
-00:00:41,620 --> 00:00:54,551
-Cost-aware gating uses hand-designed estimates to consider reframing. Positive estimated benefit does not
-prove real savings, a causal advantage, or optimal decisions.
+00:00:29,367 --> 00:00:32,515
+and an evidence-based reasoning loop.
 
 6
-00:00:54,820 --> 00:01:09,501
-The historical pilot contains 4,320 records. Its paired rerun checks consistency, not a second independent
-sample. Task families and seeds remain statistically dependent.
+00:00:32,515 --> 00:00:35,445
+The goal goes beyond producing an answer.
 
 7
-00:01:09,753 --> 00:01:22,501
-In this development pilot, PIM succeeded less often than both baselines. That negative result belongs in the
-research record, clearly and without concealment.
+00:00:35,445 --> 00:00:41,649
+We want a system that can explain which assumptions it relies on, identify evidence
+that could challenge them,
 
 8
-00:01:22,753 --> 00:01:34,561
-Its average accounted cost was also higher. These observations challenge this implementation; they do not
-establish that cognitive reframing is ineffective in general.
+00:00:41,649 --> 00:00:46,110
+and recognize when the available information is insufficient.
 
 9
-00:01:34,820 --> 00:01:48,848
-Nine development families cannot establish broad generalization. Unfinished validation, dependent seeds,
-and unmatched alternative methods limit what these exploratory comparisons can tell us.
+00:00:46,110 --> 00:00:49,798
+Consider a simple example: the ground is wet.
 
 10
-00:01:49,120 --> 00:02:05,159
-ChatGPT supported early architecture and research planning. Codex contributed formalization, software,
-analysis, and writing. Complete expression-level provenance and human scientific review remain
-incomplete.
+00:00:49,798 --> 00:00:53,223
+Was it rain, a sprinkler, or something else?
 
 11
-00:02:05,420 --> 00:02:19,866
-Runtime reliability also has unresolved limits. Missing resource-release evidence remains unknown; it proves
-neither zero leakage nor a leak. Engineering checks must stay bounded.
+00:00:53,223 --> 00:00:56,954
+Generating plausible explanations is only the beginning.
 
 12
-00:02:20,120 --> 00:02:32,554
-A future goal is recognizing mistaken interpretations and seeking human clarification. Any revised fixed
-contract must preserve its history and receive the necessary approval.
+00:00:56,954 --> 00:01:01,614
+The next challenge is choosing an experiment that can distinguish between them.
 
 13
-00:02:32,820 --> 00:02:45,907
-Specification fidelity, durable snapshot commits, and external audit journals remain proposed work. They
-are not capabilities already established by this prototype or its benchmark.
+00:01:01,614 --> 00:01:10,429
+PIM's roadmap proposes starting with small, explicitly defined synthetic environments
+where the rules and outcomes can be checked.
 
 14
-00:02:46,153 --> 00:02:56,524
-The goal is not to declare a breakthrough early, but to make each claim inspectable. Prajna AI: learning to
-rethink, and verify.
+00:01:10,429 --> 00:01:12,800
+Propose competing hypotheses.
+
+15
+00:01:12,800 --> 00:01:16,248
+Record predictions before observing results.
+
+16
+00:01:16,248 --> 00:01:18,500
+Choose informative experiments.
+
+17
+00:01:18,500 --> 00:01:21,318
+Check outcomes and counterexamples.
+
+18
+00:01:21,318 --> 00:01:25,200
+Then revise hypotheses while preserving the evidence.
+
+19
+00:01:25,200 --> 00:01:28,500
+A failed prediction should remain part of the record.
+
+20
+00:01:28,500 --> 00:01:35,156
+Changing an explanation should never quietly change the original task or its success
+criteria.
+
+21
+00:01:35,156 --> 00:01:37,085
+What have we built so far?
+
+22
+00:01:37,085 --> 00:01:45,584
+Our research prototypes include finite symbolic search, explicit contract and
+constraint checks, operation-cost accounting,
+
+23
+00:01:45,584 --> 00:01:53,095
+auditable execution records, and an offline end-to-end prototype comparing three
+scripted policies.
+
+24
+00:01:53,095 --> 00:02:01,457
+Our latest scoring-alignment component also completed a bounded engineering acceptance
+check: seventy-three tests passed.
+
+25
+00:02:01,457 --> 00:02:12,564
+It separates answer completeness, ambiguity and clarification, empty results,
+unanswered or unknown states, and matches to curator-selected references.
+
+26
+00:02:12,564 --> 00:02:16,125
+Those tests verify specified software behavior.
+
+27
+00:02:16,125 --> 00:02:21,678
+They do not establish general understanding or scientific discovery capabilities.
+
+28
+00:02:21,678 --> 00:02:23,189
+What comes next?
+
+29
+00:02:23,189 --> 00:02:29,402
+We plan to investigate whether active experiment selection improves on fixed or random
+strategies,
+
+30
+00:02:29,402 --> 00:02:33,650
+whether additional reasoning costs deliver measurable benefits,
+
+31
+00:02:33,650 --> 00:02:39,268
+and whether hypotheses can be revised consistently when contradictory evidence
+appears.
+
+32
+00:02:39,268 --> 00:02:43,676
+These are research questions, not achievements we are claiming today.
+
+33
+00:02:43,676 --> 00:02:51,825
+We also retain negative findings: the historical finite-domain pilot did not
+demonstrate a PIM performance advantage.
+
+34
+00:02:51,825 --> 00:02:59,008
+PIM is currently a system-level research prototype, not a newly trained foundation
+language model.
+
+35
+00:02:59,008 --> 00:03:08,777
+Its potential applications include requirements clarification, diagnosis in finite
+rule-based environments, and more inspectable research workflows.
+
+36
+00:03:08,777 --> 00:03:12,425
+Their practical value still needs controlled evaluation.
+
+37
+00:03:12,425 --> 00:03:15,884
+The standard we want every claim to meet is straightforward.
+
+38
+00:03:15,884 --> 00:03:17,215
+How would you test it?
+
+39
+00:03:17,215 --> 00:03:19,568
+And what evidence would change your mind?
+
+40
+00:03:19,568 --> 00:03:26,245
+If an AI could run only three experiments, how would you judge whether it had
+genuinely reduced uncertainty?
+
+41
+00:03:26,245 --> 00:03:32,543
+We welcome thoughtful discussion from researchers, engineers, and people working
+across disciplines.
+
+42
+00:03:32,543 --> 00:03:37,458
+Explore the version zero point two roadmap through the link in the accompanying
+description.
+
+43
+00:03:37,458 --> 00:03:42,639
+This introduction and the accompanying concept poster were created with AI assistance.
+
+44
+00:03:42,639 --> 00:03:45,456
+The poster illustrates the research roadmap.
+
+45
+00:03:45,456 --> 00:03:49,591
+It does not imply that every capability is already implemented.
+
+46
+00:03:49,591 --> 00:03:52,751
+This narration uses an AI-generated voice.
