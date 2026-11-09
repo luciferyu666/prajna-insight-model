@@ -1,6 +1,32 @@
 # Prajna Insight Model (PIM) / Prajna AI
 
-PIM is a research prototype for bounded symbolic search, constraint-preserving cognitive reframing (CPCR), rule-based cost-aware insight gating (CAIG), independent answer verification, and auditable execution. Prajna AI is the broader development vision; capabilities proposed in that vision are tracked separately from implemented and tested components.
+**Research and engineering status: 2026-11-09 (Asia/Taipei).**
+
+PIM studies how to make AI reasoning inspectable: keep task assumptions explicit, check candidate answers separately from reasoning proposals, account for control costs, and preserve evidence when a run fails or remains uncertain. The existing research prototype combines bounded symbolic search, constraint-preserving cognitive reframing (CPCR), rule-based cost-aware insight gating (CAIG), finite verification, and execution records.
+
+Prajna AI is the broader research program. Its v0.3 direction, the Unified Insight Process (UIP), connects hypothesis formation, evidence-oriented checking, and revision. Autonomous scientific discovery is a research objective, not an established capability. This repository is not a newly trained foundation LLM, and current evidence does not establish superiority over reasoning LLMs.
+
+## Start here
+
+- [Development status and test boundaries — 2026-11-09](docs/development-status-2026-11-09.md)
+- [Architecture: implemented components and proposed integration](docs/architecture-and-scope.md)
+- [Roadmap, milestones, and acceptance gates](docs/roadmap-and-gates.md)
+- [Evidence availability and verification limits](docs/evidence-and-reproducibility.md)
+- [Public showcase quick start](showcase/docs/quickstart.md) · [Documentation changelog](CHANGELOG.md)
+
+## Current development stage
+
+| Area | Evidence-backed status at the cutoff |
+| --- | --- |
+| Public distribution | A selected **33-file historical showcase** plus the v0.2 film and project documentation. It does not contain the complete development workspace. |
+| P0 Foundation L1 | **SOURCE_PREPARED_DYNAMIC_NOT_RUN**: 26 source files, seven private audit files and one plan prepared. Source-text review was acceptable with limits. |
+| Foundation implementation and tests | **Six Runtime Core files are absent; all 64 new acceptance tests are NOT_RUN.** G0 and G1 have not passed; L2 execution is not authorized. |
+| Human-conditioned evaluation | IW-03-SCORE01 has a **historical bounded 73/73 product/regression PASS**, with 17 control cases and 111 subtests counted separately. This is not the Foundation's test suite. |
+| Other bounded prototypes | Human-reference review, contract proposal/preview packaging, a private single-contract confirmation/adoption demonstration, and a scripted three-policy offline prototype have scoped historical evidence. |
+| Runtime reliability | IW-01/HOST remain blocked; native CORE validation is NOT_RUN. Portable integration and IW-02 control sources have not completed dynamic acceptance. |
+| Scientific conclusions | General semantic fidelity, reasoning superiority, optimal gating, and autonomous scientific discovery remain unestablished. |
+
+No product test or research experiment was run for this documentation update. Detailed package statuses and provenance are in the [dated status report](docs/development-status-2026-11-09.md). Private evidence is summarized as such; it is not presented as a publicly reproducible release.
 
 ## PIM / Prajna AI v0.2 — English animated explainer
 
@@ -14,19 +40,15 @@ This 3-minute-53-second animated introduction presents the v0.2 roadmap: testabl
 
 The film covers the broader research program. It does not imply that all roadmap capabilities are implemented in the [public showcase](showcase/README.md), or that PIM is a newly trained foundation LLM or has demonstrated general reasoning superiority.
 
-## Repository status
+The film remains a dated v0.2 overview. Use the November 9 status and roadmap above for subsequent v0.3/UIP and Foundation work.
 
-This public repository provides the project overview, the v0.2 English animated explainer, and a selected [33-file research showcase](showcase/README.md). The showcase is a bounded demonstration, not the complete research workspace. Historical traces, full research datasets, archived manuscripts, and private human-review records are not included.
+## What is available to inspect
 
-The current evidence supports a bounded research prototype. General reasoning-state sufficiency, general natural-language semantic fidelity, and superior reasoning performance have not been established.
+The [showcase](showcase/README.md) includes finite contract/reference checks, non-authorizing contract proposals, and four offline scenarios illustrating contract/reference disagreement, conditional answers, UNKNOWN verification, and PROPOSED-only contracts. Its existing source and tests are preserved as a historical snapshot.
 
-## Existing research and engineering
+The original showcase guides retain their preparation-time descriptions, including private-candidate and pending-release language. Public availability now establishes that those selected files can be inspected; it does not retroactively establish a full release-verification gate. The [current evidence guide](docs/evidence-and-reproducibility.md) distinguishes the two.
 
-- **Finite-domain CPCR:** proposal generation and a separate preservation checker examine explicitly declared finite domains. A preservation certificate does not replace the original answer verifier.
-- **Rule-based CAIG:** heuristic cost-benefit estimates help select reasoning actions. A positive estimated gain does not prove an actual gain or an optimal action.
-- **Answer and resource checks:** answer validity and budget-compliant execution success are distinct outcomes. Failed verification, unknown verification, and resource violations are preserved separately.
-- **Trace and replay:** semantic-projection replay checks recorded execution consistency within its implemented contract. It does not establish original human-intent fidelity, task success, durable immutable storage, or independent scientific replication.
-- **PIM-Bench:** exploratory evaluation uses a finite symbolic search implementation whose main reframing operation reorders a finite candidate catalog, with preservation checks and cost accounting.
+New Foundation sources, restricted reference answers, private human responses, operational trust records, internal audits, and full Pilot traces are not distributed here.
 
 ## Historical development-pilot results
 
@@ -40,40 +62,18 @@ These are preserved historical development-pilot observations for this implement
 
 The benchmark contains 180 tasks across 15 families, partitioned into 108 development, 36 validation, and 36 held-out tasks. The historical pilot evaluated nine development families: 108 tasks, five seeds, and eight policies produced 4,320 records. The paired 4,320 rerun records check consistency and are not additional independent experimental observations. Tasks, families, and seeds have statistical dependence. Accounted cost units are defined by the research cost model and are not a universal token, currency, or hardware-time measure. Validation and held-out confirmation remain incomplete.
 
-## Latest isolated development work
-
-Local evidence dated October 14, 2026 records:
-
-| Work package | Scoped outcome | Implemented scope |
-| --- | --- | --- |
-| PIM-NEXT-IW-00 | VALIDATED | Offline structural launch gate and a non-executing command-line interface |
-| PIM-NEXT-IW-03-T01 | VALIDATED | Finite-reference types, loaders, scorer, schemas, and a local TEST_VECTOR validation interface |
-
-The isolated development namespace passed 46 tests: 19 governance tests and 27 finite-reference tests. Separate reviewer and validator agent contexts reviewed these scoped engineering changes. This is local engineering evidence, not external scientific peer review or full-project acceptance.
-
-The parent IW-03 package remains pending a real reference bank and human review. The launch gate does not authenticate human identity or dispatch work. Finite test vectors do not establish human-intent correctness; resource compliance for the new scorer remains unevaluated. No research Worker or paid/live model API was used in that development window.
-
-## Planned development
-
-Work is organized into bounded, approved packages with explicit acceptance evidence:
-
-1. Complete the finite reference bank and genuine human-reference review.
-2. Develop versioned intent reassessment and clarification proposals without silently changing fixed task contracts.
-3. Separate finalized execution traces from versioned external audit corrections.
-4. Define and test snapshot finalization, atomic commit, and durable commit receipts.
-5. Investigate Worker startup and resource-release observability while preserving existing runtime contracts.
-6. Evaluate alternative gating policies through controlled comparisons, fair resource limits, and dependence-aware statistics.
-
-Specification Fidelity, a complete Atomic Snapshot Commit mechanism, and an append-only External Audit Journal are proposed research directions. They are not delivered features. Runtime reliability and incomplete resource-release evidence remain unresolved; unknown release states do not prove either zero leakage or a leak.
+Exploratory statistical diagnostics do not support a confirmatory difference claim; a non-significant result also does not establish equivalence. A future equivalence claim would require a scientifically justified margin, an appropriate test, and treatment of task-family dependence. See the [evidence and limitations guide](docs/evidence-and-reproducibility.md).
 
 ## Research integrity and AI assistance
 
-Historical positive, negative, failed, and unknown results are preserved. New work must not overwrite frozen datasets, traces, manuscripts, or prior audits. Engineering acceptance does not prove scientific superiority.
+A finite preservation certificate is separate from answer validity, resource compliance, and agreement with human intent. Replay consistency is separate from oracle correctness, durable storage, and external replication. UNKNOWN is retained when evidence is insufficient.
 
-ChatGPT assisted with early mathematical-architecture discussions, research specifications, and work-package preparation. OpenAI Codex extensively assisted with formalization, software, tests, statistical analysis, literature checking, research audits, and manuscript preparation. Human decisions and actual review responses are recorded separately. Complete expression-by-expression and passage-by-passage provenance remains partially known. AI assistance does not substitute for human scientific responsibility.
+ChatGPT and OpenAI Codex have extensively assisted with research discussions, specifications, software, tests, analysis, documentation, translation, and manuscript preparation. Human decisions and actual review responses are kept separate from AI-generated material. Separate AI reviewer contexts are not independent human scientific review. Complete per-expression and per-passage provenance remains partial.
 
-## Repository language and material policy
+Historical successes, failures, negative results, and unknowns remain part of the record. Source preparation, engineering acceptance, scientific validation, and publication approval are separate decisions.
 
-Repository descriptions, new documentation, issue titles, and commit messages use English. Preserved historical material will retain its original bytes; any approved translation will be a separate, traceable version.
+## Participation and material policy
 
-No repository license has been selected. Material rights and redistribution permissions require their own confirmation. Private research records, credentials, author information, and sealed evaluation data are excluded from this initial repository setup.
+Start with the [contribution guide](showcase/CONTRIBUTING.md) and [support guide](showcase/SUPPORT.md). Use [Issues](https://github.com/luciferyu666/prajna-insight-model/issues) for concrete questions or reproducible reports; identify the exact commit and distinguish public observations from private-evidence claims. Do not post credentials, restricted evaluation answers, or private review material.
+
+New project documentation uses English. No repository-wide software license has been selected; public visibility is not a blanket redistribution license. This update changes project documentation only and does not alter material rights, access controls, historical code, or execution permissions.
