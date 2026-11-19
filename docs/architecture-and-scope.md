@@ -1,6 +1,6 @@
 # Architecture and scope
 
-Status cutoff: **2026-11-09**. See the [status report](development-status-2026-11-09.md) and [evidence guide](evidence-and-reproducibility.md) for the provenance behind these distinctions.
+Status cutoff: **2026-11-19**. See the [status report](development-status-2026-11-19.md) and [evidence guide](evidence-and-reproducibility.md) for the provenance behind these distinctions.
 
 ## Research positioning
 
@@ -16,7 +16,7 @@ The v0.3 Unified Insight Process (UIP) is a research framing for connected hypot
 | --- | --- | --- |
 | Published showcase | Selected finite contract/reference components, proposal handling and four offline demonstrations | Historical 33-file slice, not the complete CPCR/CAIG runtime |
 | Later isolated prototypes | Conditional scoring, bounded review packets, private TA1 adoption demo, scripted three-policy MVP | Private, version-specific engineering evidence; no blanket public reproducibility or production guarantees |
-| New Foundation | Task/data/event/budget schemas, synthetic fixtures and acceptance-test definitions | L1 source preparation only; six runtime modules absent, 64 tests NOT_RUN |
+| New Foundation | Six local runtime modules and bounded synthetic task/data/event/budget test evidence | Internal Linux staging records report 64 original plus 42 additional passes; the product directory was matched to the snapshot, not separately tested. Full acceptance remains open. |
 
 The older working prototypes do not automatically implement the new Foundation interfaces.
 
@@ -39,7 +39,7 @@ flowchart LR
     R -.-> L
 ```
 
-This diagram describes the target architecture. Solid arrows are intended information flow, not claims that the complete loop exists. Active experiment selection, general hypothesis revision and the new Foundation runtime remain unfinished.
+This diagram describes the target architecture. Solid arrows are intended information flow, not claims that the complete loop exists. Active experiment selection and general hypothesis revision remain unfinished. The locally integrated Foundation modules have bounded synthetic evidence but the complete intended runtime has not been accepted.
 
 Key boundaries in the design (E02, E12):
 
@@ -50,7 +50,7 @@ Key boundaries in the design (E02, E12):
 - Budget reservations, denials, unknown use and violations must remain distinguishable. Later accounting must not erase an earlier violation or create permission.
 - Evidence events need explicit subject identity, ordering, provenance and failure states.
 
-These are interface/acceptance requirements until the relevant implementation and dynamic tests pass. Loader boundaries are not OS isolation. Hash chains are not independent identity, immutable storage, crash recovery or an external journal.
+These remain interface and acceptance requirements; the bounded staging tests do not establish all operating and acceptance properties. Loader boundaries are not OS isolation. Hash chains are not independent identity, immutable storage, crash recovery or an external journal.
 
 ## Existing demonstrations and what they establish
 

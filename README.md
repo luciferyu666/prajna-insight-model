@@ -1,6 +1,6 @@
 # Prajna Insight Model (PIM) / Prajna AI
 
-**Research and engineering status: 2026-11-09 (Asia/Taipei).**
+**Research and engineering status: 2026-11-19 (Asia/Taipei).**
 
 PIM studies how to make AI reasoning inspectable: keep task assumptions explicit, check candidate answers separately from reasoning proposals, account for control costs, and preserve evidence when a run fails or remains uncertain. The existing research prototype combines bounded symbolic search, constraint-preserving cognitive reframing (CPCR), rule-based cost-aware insight gating (CAIG), finite verification, and execution records.
 
@@ -8,7 +8,7 @@ Prajna AI is the broader research program. Its v0.3 direction, the Unified Insig
 
 ## Start here
 
-- [Development status and test boundaries — 2026-11-09](docs/development-status-2026-11-09.md)
+- [Development status and test boundaries — 2026-11-19](docs/development-status-2026-11-19.md) · [November 9 historical snapshot](docs/development-status-2026-11-09.md)
 - [Architecture: implemented components and proposed integration](docs/architecture-and-scope.md)
 - [Roadmap, milestones, and acceptance gates](docs/roadmap-and-gates.md)
 - [Evidence availability and verification limits](docs/evidence-and-reproducibility.md)
@@ -19,14 +19,14 @@ Prajna AI is the broader research program. Its v0.3 direction, the Unified Insig
 | Area | Evidence-backed status at the cutoff |
 | --- | --- |
 | Public distribution | A selected **33-file historical showcase** plus the v0.2 film and project documentation. It does not contain the complete development workspace. |
-| P0 Foundation L1 | **SOURCE_PREPARED_DYNAMIC_NOT_RUN**: 26 source files, seven private audit files and one plan prepared. Source-text review was acceptable with limits. |
-| Foundation implementation and tests | **Six Runtime Core files are absent; all 64 new acceptance tests are NOT_RUN.** G0 and G1 have not passed; L2 execution is not authorized. |
+| P0 Foundation L1 | The November 9 source-preparation stage is preserved as a historical snapshot; its NOT_RUN status described that stage at that time. |
+| Foundation implementation and tests | Six Runtime Core files were integrated locally. Internal records report **64 original and 42 additional synthetic cases passing** on a fixed Linux staging snapshot; the product directory was matched to that snapshot but not separately tested. G0/G1 and full Foundation acceptance remain open. |
 | Human-conditioned evaluation | IW-03-SCORE01 has a **historical bounded 73/73 product/regression PASS**, with 17 control cases and 111 subtests counted separately. This is not the Foundation's test suite. |
 | Other bounded prototypes | Human-reference review, contract proposal/preview packaging, a private single-contract confirmation/adoption demonstration, and a scripted three-policy offline prototype have scoped historical evidence. |
 | Runtime reliability | IW-01/HOST remain blocked; native CORE validation is NOT_RUN. Portable integration and IW-02 control sources have not completed dynamic acceptance. |
 | Scientific conclusions | General semantic fidelity, reasoning superiority, optimal gating, and autonomous scientific discovery remain unestablished. |
 
-No product test or research experiment was run for this documentation update. Detailed package statuses and provenance are in the [dated status report](docs/development-status-2026-11-09.md). Private evidence is summarized as such; it is not presented as a publicly reproducible release.
+No product test or research experiment was run for this documentation update. Detailed package statuses and provenance are in the [dated status report](docs/development-status-2026-11-19.md). Private evidence is summarized as such; it is not presented as a publicly reproducible release.
 
 ## PIM / Prajna AI v0.2 — English animated explainer
 
@@ -40,7 +40,7 @@ This 3-minute-53-second animated introduction presents the v0.2 roadmap: testabl
 
 The film covers the broader research program. It does not imply that all roadmap capabilities are implemented in the [public showcase](showcase/README.md), or that PIM is a newly trained foundation LLM or has demonstrated general reasoning superiority.
 
-The film remains a dated v0.2 overview. Use the November 9 status and roadmap above for subsequent v0.3/UIP and Foundation work.
+The film remains a dated v0.2 overview. Use the November 19 status and roadmap above for subsequent v0.3/UIP and Foundation work.
 
 ## What is available to inspect
 

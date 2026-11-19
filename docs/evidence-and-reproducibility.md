@@ -1,6 +1,6 @@
 # Evidence availability and reproducibility
 
-Cutoff: **2026-11-09**.
+Cutoff: **2026-11-19**. The November 9 evidence register below remains historical; the [November 19 status](development-status-2026-11-19.md) summarizes later local evidence.
 
 This documentation update reviewed the public repository and existing local project records. It ran no product tests, model experiments or native diagnostics. It publishes a sanitized progress summary, not private source packages or raw audit evidence.
 
@@ -32,7 +32,7 @@ The IDs below identify inspected project records. They are not download links or
 | ID | Record / version | Evidence class and supported scope |
 | --- | --- | --- |
 | E01 | November 9 P0 Final Report and Historical Test Catalog | Historical-receipt/diagnostic synthesis: ENG-A00, FIX-R00/R01/R02/R04 inventory; runtime failures and unrun obligations |
-| E02 | P0-FOUNDATION01 Source-v01 final Stage Decision and Source Manifest, November 9 | Source review: 26 sources, 64 NOT_RUN cases, six absent modules, L2 unauthorized. Current file hashes checked against final manifest for this update |
+| E02 | P0-FOUNDATION01 Source-v01 final Stage Decision and Source Manifest, November 9 | Source review: 26 sources, 64 NOT_RUN cases, six absent modules, L2 unauthorized. File hashes were checked against the final manifest for the November 9 update |
 | E03 | IW-00 Attempt-01 Final Decision | Historical report: 19-test bounded offline governance acceptance |
 | E04 | IW-00-ALIGN01 Attempt-01 Delivery Index | Static candidate: 36 test definitions unexecuted |
 | E05 | IW-02 Control-Candidate-v02 Stage Decision | Static source-only acceptance; control plugin and dynamic checks absent |
@@ -43,8 +43,9 @@ The IDs below identify inspected project records. They are not download links or
 | E10 | IW-05-MVP01 Attempt-01 Final Decision | Historical 180-method verification and 18 scripted episodes; no model efficacy study |
 | E11 | November 3 development inventory | Dated synthesis for remaining IW-06–IW-16 scope and research limits |
 | E12 | November 9 work-package crosswalk and approved four-package design | Planning: new ENG/FIX identities, Phase A dependencies and later conditional research |
+| E13 | November 19 local Foundation integration, test and closure-review records | Project-reported private evidence: 64 original and 42 additional synthetic cases passed on fixed Linux staging; product snapshot matched but was not separately tested. Raw source, fixtures, receipts and audit records are not publicly available. |
 
-Later scoped records supersede earlier pending notes only for that particular result. For example, E07 supports the later SCORE01 test result; it does not reconcile the older environment-image mismatch, adopt references, close full IW-03 or pass the new Foundation tests.
+E02 records the November 9 stage and its 64 NOT_RUN cases and absent modules at that time; E13 is later, bounded evidence and does not retroactively change E02. Later scoped records supersede earlier pending notes only for that particular result. For example, E07 supports the later SCORE01 test result; it does not reconcile the older environment-image mismatch, adopt references, close full IW-03 or pass the new Foundation tests.
 
 ## How to inspect or reproduce responsibly
 

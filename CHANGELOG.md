@@ -2,6 +2,16 @@
 
 This changelog tracks public project-information updates. It is separate from the preserved [showcase changelog](showcase/CHANGELOG.md), and is not a product-release or Gate-acceptance record.
 
+## 2026-11-19 — Scoped Foundation progress update
+
+- Added a dated progress report and updated the project overview, architecture, roadmap and evidence guide.
+- Recorded six locally integrated Runtime Core files and project-reported results of 64 original plus 42 additional synthetic cases on a fixed Linux staging snapshot.
+- Preserved the distinction between matching the product directory to the tested snapshot and running tests in that directory.
+- Kept G0/G1 unpassed, Windows restrictions unchanged, and source rights, execution accounting and data-governance questions open.
+- Retained the November 9 report and public showcase as historical snapshots. No private sources, restricted references or internal raw evidence were published.
+
+This is a documentation synchronization; the update did not rerun product tests or grant new execution authority.
+
 ## 2026-11-09 — Evidence-aligned project status
 
 - Replaced the stale October 14 root progress section with the November 9 engineering snapshot.
