@@ -1,6 +1,6 @@
 # Evidence availability and reproducibility
 
-Cutoff: **2026-11-19**. The November 9 evidence register below remains historical; the [November 19 status](development-status-2026-11-19.md) summarizes later local evidence.
+Cutoff: **2026-11-20**. The November 9 evidence register below remains historical; the [November 19 status](development-status-2026-11-19.md) and [November 20 follow-up](development-status-2026-11-20.md) distinguish later local evidence and open acceptance work.
 
 This documentation update reviewed the public repository and existing local project records. It ran no product tests, model experiments or native diagnostics. It publishes a sanitized progress summary, not private source packages or raw audit evidence.
 
@@ -15,7 +15,7 @@ These labels describe availability and scope, not increasing scientific certaint
 
 ## Public reference snapshot
 
-The pre-update public snapshot is [commit 8dfbcf4](https://github.com/luciferyu666/prajna-insight-model/tree/8dfbcf4f6eb34f214cf2e1ef090bf94dd68a18f6).
+The historical public reference used before the November 19 update is [commit 8dfbcf4](https://github.com/luciferyu666/prajna-insight-model/tree/8dfbcf4f6eb34f214cf2e1ef090bf94dd68a18f6).
 
 | ID | Public source | Supports / limit |
 | --- | --- | --- |
@@ -44,6 +44,8 @@ The IDs below identify inspected project records. They are not download links or
 | E11 | November 3 development inventory | Dated synthesis for remaining IW-06–IW-16 scope and research limits |
 | E12 | November 9 work-package crosswalk and approved four-package design | Planning: new ENG/FIX identities, Phase A dependencies and later conditional research |
 | E13 | November 19 local Foundation integration, test and closure-review records | Project-reported private evidence: 64 original and 42 additional synthetic cases passed on fixed Linux staging; product snapshot matched but was not separately tested. Raw source, fixtures, receipts and audit records are not publicly available. |
+
+The November 20 follow-up is a project-reported assessment of private records. It does not publish the underlying materials or make the historical Foundation tests publicly reproducible. The direct lost-acknowledgment / UNKNOWN test candidate remains NOT_RUN.
 
 E02 records the November 9 stage and its 64 NOT_RUN cases and absent modules at that time; E13 is later, bounded evidence and does not retroactively change E02. Later scoped records supersede earlier pending notes only for that particular result. For example, E07 supports the later SCORE01 test result; it does not reconcile the older environment-image mismatch, adopt references, close full IW-03 or pass the new Foundation tests.
 

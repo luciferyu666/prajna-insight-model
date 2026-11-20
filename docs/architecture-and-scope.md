@@ -1,6 +1,6 @@
 # Architecture and scope
 
-Status cutoff: **2026-11-19**. See the [status report](development-status-2026-11-19.md) and [evidence guide](evidence-and-reproducibility.md) for the provenance behind these distinctions.
+Status cutoff: **2026-11-20**. See the [status report](development-status-2026-11-20.md) and [evidence guide](evidence-and-reproducibility.md) for the provenance behind these distinctions.
 
 ## Research positioning
 
@@ -63,5 +63,7 @@ The TA1 confirmation prototype demonstrates a private, single-session approve/ad
 ## Deployment and reliability
 
 Cloud execution is a future deployment target, not an accepted production service. Platform-neutral source preparation does not establish Linux or Windows runtime reliability. Environment admission, exact source/dependency identity, bounded execution, failure handling, cleanup evidence and independent review remain necessary.
+
+Direct verification of the lost-acknowledgment / UNKNOWN behavior remains an unrun candidate; a prepared test is not an observed result or proof of a defect.
 
 The Windows HOST branch remains blocked and its H1 limit remains four. A separate safe validation route may establish only its approved scope; it cannot erase historical failures or silently remove original platform obligations.

@@ -2,6 +2,15 @@
 
 This changelog tracks public project-information updates. It is separate from the preserved [showcase changelog](showcase/CHANGELOG.md), and is not a product-release or Gate-acceptance record.
 
+## 2026-11-20 — Foundation acceptance follow-up
+
+- Added a dated, sanitized follow-up and aligned the project overview, architecture, roadmap and evidence guide.
+- Preserved the previously reported fixed-staging 64 original and 42 additional synthetic results with their original limitations; no tests were rerun for this update.
+- Clarified that A00, L2 admission, A01 and G0/G1 remain open, including a direct lost-acknowledgment / UNKNOWN candidate that has not run.
+- Kept private inputs, raw records and unresolved rights outside the public repository; preserved all earlier dated snapshots.
+
+This is a documentation update, not a product release, execution authorization or scientific validation.
+
 ## 2026-11-19 — Scoped Foundation progress update
 
 - Added a dated progress report and updated the project overview, architecture, roadmap and evidence guide.

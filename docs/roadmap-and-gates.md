@@ -1,6 +1,6 @@
 # Roadmap, milestones and gates
 
-Planning cutoff: **2026-11-19**. This document records priorities and completion criteria, not new execution authorization. Status evidence is summarized in the [dated report](development-status-2026-11-19.md).
+Planning cutoff: **2026-11-20**. This document records priorities and completion criteria, not new execution authorization. Status evidence is summarized in the [dated report](development-status-2026-11-20.md); the [November 19 snapshot](development-status-2026-11-19.md) remains available.
 
 ## Gate semantics
 
@@ -19,7 +19,7 @@ G0-P0-STATIC was a bounded source-preparation permission. **Full G0 and G1 remai
 | Priority / milestone | Existing starting point | Required next work | Completion evidence |
 | --- | --- | --- | --- |
 | P0 — Foundation readiness and governance | L1 source review and local L2 implementation/validation records | Reconcile precise execution authority, resource evidence, source rights, effective access and data-handling review; assess the remaining A00 and admission conditions | Traceable, scoped evidence and the applicable owner/independent decisions; no automatic gate pass |
-| P0 — Foundation behavior | Six local Runtime Core files; 64 original and 42 additional synthetic cases reported passing in fixed Linux staging | Preserve exact results and failures; address outstanding scope, data governance and acceptance questions before declaring completion | Version-specific acceptance decision with explicit environment, evidence availability and residual limits |
+| P0 — Foundation behavior | Six local Runtime Core files; 64 original and 42 additional synthetic cases reported passing in fixed Linux staging | Preserve exact results and failures; independently verify the unrun direct lost-acknowledgment / UNKNOWN case and address outstanding admission, source and acceptance questions | Version-specific acceptance decision with explicit environment, evidence availability and residual limits |
 | P0 — Runtime/control readiness | Portable candidate and IW-02 v02 test/control sources | Complete the approved control-plugin path and environment appendix; first validate the 89-case PC09 scope | Fresh receipts on the exact candidate; remaining 190 and native/full-regression obligations stay open |
 | P0 — Windows historical branch | Preserved H1/JSON/ACK and security records | Only if this branch is selected, complete precise safety review and bounded recovery authorization before diagnostics or repair | Necessary JSON/four-stage/HOST checks; H1 must satisfy four, not a raised limit |
 | P1 — Independent verifier and offline adapter | Finite checks and older scripted prototypes available | ENG-A04/A05: establish public/restricted data boundaries, independent checking, explicit uncertainty and a controlled adapter | Package-specific behavior and negative-case evidence; G1 considered only after its complete criteria are met |
