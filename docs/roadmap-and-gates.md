@@ -1,6 +1,6 @@
 # Roadmap, milestones and gates
 
-Planning cutoff: **2026-11-20**. This document records priorities and completion criteria, not new execution authorization. Status evidence is summarized in the [dated report](development-status-2026-11-20.md); the [November 19 snapshot](development-status-2026-11-19.md) remains available.
+Updated 28 November 2026. Current scope and completion counts appear in the [dated status report](development-status-2026-11-28.md).
 
 ## Gate semantics
 
@@ -12,14 +12,28 @@ Planning cutoff: **2026-11-20**. This document records priorities and completion
 
 An exit gate must not become a circular prerequisite for the work needed to satisfy it. For example, G1 acceptance follows the foundation/verifier/adapter work that it evaluates; it does not authorize their execution in advance.
 
-G0-P0-STATIC was a bounded source-preparation permission. **Full G0 and G1 remain unpassed.** Subsequent local Foundation implementation and testing occurred; exact execution-authority and resource records remain under reconciliation. A review, inventory, test result or remaining numerical budget does not create a new permission.
+G0-P0-STATIC covered source preparation. Full G0 and G1 remain open. The 25 November closeout accepted D05 section 3 within its fixed local scope after reconciling the run's authorization, configuration, results and cleanup.
 
-## Prioritized milestones
+## Current D05 priorities
+
+| Priority | Next evidence needed |
+| --- | --- |
+| A06 development scoring | Qualify a version-bound independent reviewer on a fresh sealed synthetic ballot. Obtain three trustworthy scores, two reproducible policy pairs and sign-off by both designated AI reviewers. |
+| A02 and A05-I custody and human calibration | Obtain a rights-backed split and exposure record, staff the second human reviewer and freeze thresholds before ratings begin. Keep both initial ratings independently sealed for adjudication. |
+| A06 formal blind evaluation | Complete study design and admission for sealed, unexposed families, including resource limits, missing-data handling and statistical power. |
+| A07 independent replication | Have a separate replicator repeat the accepted protocol on another sealed family set and report discrepancies. |
+| Subsequent stages | Phase B post-training and Phase C training from random initialization each require their own gate, rights and resource decisions. |
+
+**Phase A stands at 18/28 (64.29%).** A03, A04 and A05-D have owner sign-off within their engineering scopes. Their results support the next evaluation steps. Formal blind evaluation and replication remain `NOT_RUN`.
+
+## Earlier engineering milestones
+
+The ENG and IW identifiers below belong to earlier plans. The current D05 sign-offs and reporting denominator are in the [28 November package table](development-status-2026-11-28.md).
 
 | Priority / milestone | Existing starting point | Required next work | Completion evidence |
 | --- | --- | --- | --- |
-| P0 — Foundation readiness and governance | L1 source review and local L2 implementation/validation records | Reconcile precise execution authority, resource evidence, source rights, effective access and data-handling review; assess the remaining A00 and admission conditions | Traceable, scoped evidence and the applicable owner/independent decisions; no automatic gate pass |
-| P0 — Foundation behavior | Six local Runtime Core files; 64 original and 42 additional synthetic cases reported passing in fixed Linux staging | Preserve exact results and failures; independently verify the unrun direct lost-acknowledgment / UNKNOWN case and address outstanding admission, source and acceptance questions | Version-specific acceptance decision with explicit environment, evidence availability and residual limits |
+| P0 — Foundation readiness and governance | Source inventory and case-specific execution admission accepted within the D05 closure | Keep broader source rights and historical host constraints visible for any new use | Independent evidence and a decision for the proposed scope |
+| P0 — Foundation behavior | Six integrated cores, historical staging results and a separately accepted local lost-acknowledgement test | Carry forward version and environment limits | The D05 engineering closeout accepted four scoped deliverables on 25 November |
 | P0 — Runtime/control readiness | Portable candidate and IW-02 v02 test/control sources | Complete the approved control-plugin path and environment appendix; first validate the 89-case PC09 scope | Fresh receipts on the exact candidate; remaining 190 and native/full-regression obligations stay open |
 | P0 — Windows historical branch | Preserved H1/JSON/ACK and security records | Only if this branch is selected, complete precise safety review and bounded recovery authorization before diagnostics or repair | Necessary JSON/four-stage/HOST checks; H1 must satisfy four, not a raised limit |
 | P1 — Independent verifier and offline adapter | Finite checks and older scripted prototypes available | ENG-A04/A05: establish public/restricted data boundaries, independent checking, explicit uncertainty and a controlled adapter | Package-specific behavior and negative-case evidence; G1 considered only after its complete criteria are met |
@@ -33,7 +47,7 @@ No completion date, cloud budget, training run or deployment is implied by these
 
 ## Two independent engineering tracks
 
-The new Foundation can be planned independently of the unresolved Windows diagnostics where its own prerequisites permit. Its tests cannot close Windows HOST/CORE. Conversely, a historical Windows blocker does not invalidate the separately scoped SCORE01 Linux result.
+The scoped Foundation closeout leaves the historical Windows diagnostics on their own track. The blocked host investigation and earlier SCORE01 Linux result retain their individual evidence and limits.
 
 For the portable/native branch, preserve the 279-identity obligations, the 140-process matrix, required N01/C1 cases, three full regressions and independent full verification according to the applicable version. Do not silently substitute platform coverage. A formal platform-applicability decision is needed for any change to those obligations.
 

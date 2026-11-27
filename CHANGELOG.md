@@ -2,6 +2,12 @@
 
 This changelog tracks public project-information updates. It is separate from the preserved [showcase changelog](showcase/CHANGELOG.md), and is not a product-release or Gate-acceptance record.
 
+## 2026-11-28 — Foundation closure and Phase A status
+
+- Recorded the 25 November acceptance of all four scoped Foundation engineering deliverables and the direct lost-acknowledgement test.
+- Added the Phase A denominator and seven-package breakdown, including the first accepted A06 statistical-method milestone. Formal blind evaluation and replication remain pending.
+- Recorded the failed synthetic reviewer calibration and static acquisition of a candidate replacement. The [dated report](docs/development-status-2026-11-28.md) explains why neither adds a management milestone.
+
 ## 2026-11-20 — Foundation acceptance follow-up
 
 - Added a dated, sanitized follow-up and aligned the project overview, architecture, roadmap and evidence guide.

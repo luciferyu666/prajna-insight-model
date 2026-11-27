@@ -1,6 +1,6 @@
 # Evidence availability and reproducibility
 
-Cutoff: **2026-11-20**. The November 9 evidence register below remains historical; the [November 19 status](development-status-2026-11-19.md) and [November 20 follow-up](development-status-2026-11-20.md) distinguish later local evidence and open acceptance work.
+Updated 28 November 2026. See the [current status](development-status-2026-11-28.md) for Foundation closure and Phase A. The [19 November](development-status-2026-11-19.md) and [20 November](development-status-2026-11-20.md) reports preserve the earlier observations.
 
 This documentation update reviewed the public repository and existing local project records. It ran no product tests, model experiments or native diagnostics. It publishes a sanitized progress summary, not private source packages or raw audit evidence.
 
@@ -45,7 +45,16 @@ The IDs below identify inspected project records. They are not download links or
 | E12 | November 9 work-package crosswalk and approved four-package design | Planning: new ENG/FIX identities, Phase A dependencies and later conditional research |
 | E13 | November 19 local Foundation integration, test and closure-review records | Project-reported private evidence: 64 original and 42 additional synthetic cases passed on fixed Linux staging; product snapshot matched but was not separately tested. Raw source, fixtures, receipts and audit records are not publicly available. |
 
-The November 20 follow-up is a project-reported assessment of private records. It does not publish the underlying materials or make the historical Foundation tests publicly reproducible. The direct lost-acknowledgment / UNKNOWN test candidate remains NOT_RUN.
+## Later evidence and public verification limits
+
+| Record | What the project checked | What a reader can verify here |
+| --- | --- | --- |
+| 25 November Foundation closeout | Four scoped engineering exits, the separately executed synthetic ledger test, independently checked launch and cleanup receipts, and the historical staging matrix | The dated result and its scope. The selected public showcase cannot replay the private Foundation runs. |
+| 26–27 November Phase A sign-offs | Disclosed data inventories, owner-adopted runner and UIP work, scoring rules, local reviewer delivery controls and the accepted A06 statistical method | The seven-package accounting and milestones in the [status report](development-status-2026-11-28.md). Raw responses and evaluation materials remain private. |
+| 28 November reviewer calibration | 35 offline controls passed. One synthetic model ballot failed the judgment check. No research response received an accepted score. | The aggregate negative result and remaining acceptance conditions. |
+| 28 November candidate acquisition | File digest and tensor layout checked for the 3B candidate reviewer | The vendor's pinned file and license are linked in the [status report](development-status-2026-11-28.md). Reviewer fitness still requires a prospective calibration. |
+
+The 20 November follow-up recorded the direct ledger test as unrun at that cutoff. The later test has its own execution record.
 
 E02 records the November 9 stage and its 64 NOT_RUN cases and absent modules at that time; E13 is later, bounded evidence and does not retroactively change E02. Later scoped records supersede earlier pending notes only for that particular result. For example, E07 supports the later SCORE01 test result; it does not reconcile the older environment-image mismatch, adopt references, close full IW-03 or pass the new Foundation tests.
 
